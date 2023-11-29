@@ -1,0 +1,47 @@
+so basically there are 2 situations
+
+first situation is:
+private float startTime;
+private float journeyTime=4.0f;
+private void Start()
+{
+    startTime=Time.time;
+}
+
+private void Update()
+{
+    float fractionTime=(Time.time-startTime)/journeyTime;
+
+    Vector3.Slerp(startPosition,endPosition,fractionTime);
+}
+
+
+second situation is:
+
+
+private float elapsedTime=0f;
+private float desiredDuration=4.0f;
+
+private void Update()
+{
+    elapsedTime+=Time.deltaTime;
+    float percentage = elapsedTime/desiredDuration;
+    Vector3.Slerp(startPosition,endPosition,percentage);
+}
+
+
+
+both technques are samne right??
+
+
+
+
+
+interpolation is basically this:
+
+
+take 2 points in a world space suppose they are A and B, and you have an object that is C;
+interpolation means you want to move C from A to B in a linear direction, no circular path, just linear.
+
+it returns a float value, so for example if C is in the middle of A and B, the interlolation will return 0.5.
+I think you're smart enough to understand everything else.

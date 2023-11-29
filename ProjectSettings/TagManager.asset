@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - cutter
+  - fence
+  - enemySnake
+  - winningLine
+  - floatingAxe
+  - drum
+  - rollingCutter
+  - water
+  - colorMultiplier
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - coin layer
+  - Water
+  - UI
+  - enemy sake layer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
